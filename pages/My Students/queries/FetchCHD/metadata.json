@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "FetchLearners",
+    "name": "FetchCHD",
     "datasource": {
       "name": "PreceptorialDataVentsim",
       "pluginId": "google-sheets-plugin",
@@ -28,7 +28,7 @@
         },
         "pagination": {
           "data": {
-            "limit": "20",
+            "limit": "50",
             "offset": "0"
           }
         },
@@ -42,7 +42,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Learners"
+          "data": "ChapterD"
         },
         "sheetUrl": {
           "data": "https://docs.google.com/spreadsheets/d/141g9X4xbvuJWs4a6AVWJPrFzFwDHMA3DmpHAhy25aPM/edit"
@@ -67,8 +67,8 @@
             "children": [
               {
                 "condition": "EQ",
-                "key": "PreceptorID",
-                "value": "{{appsmith.user.email}}"
+                "key": "LearnerEmail",
+                "value": "{{LearnersTable.selectedRow.LearnerID}}"
               }
             ]
           }
@@ -85,15 +85,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.user.email"
+      "LearnersTable.selectedRow.LearnerID"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-07T17:59:38Z"
+    "createdAt": "2023-06-08T20:16:49Z"
   },
-  "id": "My Students_FetchLearners",
+  "id": "My Students_FetchCHD",
   "deleted": false,
-  "gitSyncId": "6480c2d3a89c1b088d79fb0a_6480c58ab9426707ed0e5d5f"
+  "gitSyncId": "6480c2d3a89c1b088d79fb0a_64823731a89c1b088d7a0d58"
 }

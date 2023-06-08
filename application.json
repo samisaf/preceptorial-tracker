@@ -11,10 +11,6 @@
     {
       "id": "All Students",
       "isDefault": false
-    },
-    {
-      "id": "ChapterA",
-      "isDefault": false
     }
   ],
   "viewMode": false,
