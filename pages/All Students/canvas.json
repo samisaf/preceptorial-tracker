@@ -318,9 +318,6 @@
                   "key": "primaryColumns.Institution.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Email.computedValue"
-                },
-                {
                   "key": "primaryColumns.PreceptorID.computedValue"
                 },
                 {
@@ -340,6 +337,9 @@
                 },
                 {
                   "key": "isVisible"
+                },
+                {
+                  "key": "primaryColumns.LearnerID.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -378,7 +378,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1686171082309,
+              "columnUpdatedAt": 1686256375564,
               "originalBottomRow": 79,
               "defaultSelectedRowIndices": [
                 0
@@ -390,12 +390,12 @@
                 "LastName",
                 "FirstName",
                 "Institution",
-                "Email",
                 "PreceptorID",
                 "Year",
                 "Finished",
                 "DateOfCompletion",
-                "rowIndex"
+                "rowIndex",
+                "LearnerID"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -502,36 +502,6 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{AllLearnersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Institution\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Email": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Email",
-                  "id": "Email",
-                  "alias": "Email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Email",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{AllLearnersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -682,6 +652,36 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{AllLearnersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "LearnerID": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "LearnerID",
+                  "id": "LearnerID",
+                  "alias": "LearnerID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "LearnerID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{AllLearnersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"LearnerID\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
