@@ -253,7 +253,11 @@
                 "rowIndex",
                 "LearnerID"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 21,
               "columnWidthMap": {
@@ -542,7 +546,7 @@
                   "cellBackground": ""
                 }
               },
-              "onRowSelected": "{{FetchCHA.run()}}",
+              "onRowSelected": "{{FetchCHA.run();FetchCHB.run();FetchCHC.run();FetchCHD.run()}}",
               "key": "34al6yrpxf",
               "canFreezeColumn": true,
               "isDeprecated": false,
